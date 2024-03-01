@@ -9,7 +9,7 @@ import snow_icon from '../Assets/snow.png'
 import wind_icon from '../Assets/wind.png'
 import humidity_icon from '../Assets/humidity.png'
 
-let apiKey = "645922d0b6a066098bab846afd3c4756";
+let apiKey = "**********API-HERE***********";
 
 
 
