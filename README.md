@@ -24,7 +24,7 @@ Welcome to the Weather App! This is a simple React application that allows users
 
 ## Screenshots
 
-![Screenshot](screenshot.png)
+![Screenshot](Screenshot.png)
 
 ## Contributing
 

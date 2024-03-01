@@ -45,10 +45,18 @@ const search = async ()=>{
   settemperature(data.main.temp);
   setlocation(data.name);
 }
+const handleEnter = (event)=>{
+  if(event.key = "Enter"){
+    search();
+  }
+};
   return (
     <div className='container'>
       <div className='top-bar'>
-        <input type="text" className="cityInput" placeholder='Enter City'/>
+        <input type="text" 
+        className="cityInput" 
+        placeholder='Enter City'
+        onKeyPress={handleEnter}/>
         <div className="search-icon" onClick={()=>search()}>
           <img src={search_icon} alt="" className="" />
         </div>
