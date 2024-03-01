@@ -9,7 +9,7 @@ import snow_icon from '../Assets/snow.png'
 import wind_icon from '../Assets/wind.png'
 import humidity_icon from '../Assets/humidity.png'
 
-let apiKey = "**********API-HERE***********";
+let apiKey = "**********************************";
 
 
 
@@ -45,18 +45,19 @@ const search = async ()=>{
   settemperature(data.main.temp);
   setlocation(data.name);
 }
-const handleEnter = (event)=>{
-  if(event.key = "Enter"){
-    search();
-  }
-};
+const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      search();
+    }
+  };
+
   return (
     <div className='container'>
       <div className='top-bar'>
         <input type="text" 
         className="cityInput" 
         placeholder='Enter City'
-        onKeyPress={handleEnter}/>
+        onKeyPress={handleKeyPress}/>
         <div className="search-icon" onClick={()=>search()}>
           <img src={search_icon} alt="" className="" />
         </div>
